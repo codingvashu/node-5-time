@@ -7,5 +7,9 @@ route.get('/users',(req,res)=>{
     usercontroller.getAllUser(req,res)
 
 })
+route.get('/user/:id',(req,res)=>{
+    usercontroller.getUser(req,res)
+
+})
 
 module.exports = route
